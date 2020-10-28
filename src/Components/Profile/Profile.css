@@ -1,0 +1,32 @@
+.profile {
+  display: flex;
+  flex-flow: column;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: auto;
+  border-radius: 5%;
+  padding: 15px;
+  background-color: grey;
+}
+.stats{
+  display: flex;
+  list-style: none;
+}
+.profile-item{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  width: 70px;
+  height: 40px;
+}
+.avatar {
+  border-radius: 50%;
+}
