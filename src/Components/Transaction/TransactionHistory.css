@@ -10,3 +10,12 @@
   border-collapse: collapse;
   box-shadow: 0 0 10px rgba(253, 252, 252, 0.5);
 }
+th {
+  width: 100px;
+  background-color: darkseagreen;
+  /* border: 1px solid black; */
+}
+td {
+  width: 100px;
+  /* border: 1px solid black; */
+}
