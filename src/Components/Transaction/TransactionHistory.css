@@ -7,15 +7,15 @@
   margin-left: 30px;
   margin-bottom: 40px;
   border: 1px solid wheat;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   box-shadow: 0 0 10px rgba(253, 252, 252, 0.5);
 }
 th {
   width: 100px;
-  background-color: darkseagreen;
-  /* border: 1px solid black; */
+  border: 1px solid wheat;
 }
 td {
   width: 100px;
-  /* border: 1px solid black; */
+  border: 1px solid wheat;
+  text-align: center;
 }
