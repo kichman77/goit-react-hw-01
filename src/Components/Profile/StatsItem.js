@@ -1,13 +1,18 @@
-// import { object } from 'prop-types';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const StatsItem = ({ stat: [key, value] }) => {
+const StatsItem = ({ stats }) => {
   return (
-    <li className="profile-item">
-      <span className="label">{key}</span>
-      <span className="quantity">{value}</span>
-    </li>
+    <ul className="stats">
+      {Object.keys(stats).map((key, i) => {
+        return (
+          <li className="profile-item" key={i}>
+            <span className="label">{key}</span>
+            <span className="quantity">{stats[key]}</span>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
@@ -15,5 +20,5 @@ export default StatsItem;
 
 StatsItem.propTypes = {
   key: PropTypes.string,
-  value: PropTypes.number
-}
+  'stats[key]': PropTypes.number,
+};

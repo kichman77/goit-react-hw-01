@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const TransactionItem = ({ type, amount, currency }) => {
   return (
     <tr>

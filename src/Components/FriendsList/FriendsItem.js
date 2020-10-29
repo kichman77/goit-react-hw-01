@@ -1,21 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FriendsItem = (  {name, avatar, status}) => {
-
+const FriendsItem = ({ friend }) => {
   const styles = {
-    backgroundColor: status ? 'green' : 'red',
-    width: '30px',
-    height: '30px',
+    backgroundColor: friend.isOnline ? 'green' : 'red',
+    width: '10px',
+    height: '10px',
     display: 'block',
     borderRadius: '50%',
   };
-  // console.log(props);
   return (
     <li className="item">
       <span style={styles}></span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+      <img
+        className="avatar"
+        src={friend.avatar}
+        alt={friend.name}
+        width="48"
+      />
+      <p className="name">{friend.name}</p>
     </li>
   );
 };
@@ -23,7 +26,7 @@ const FriendsItem = (  {name, avatar, status}) => {
 export default FriendsItem;
 
 FriendsItem.propTypes = {
-  name: PropTypes.string,
-  img: PropTypes.string,
-  status: PropTypes.bool
-}
+  'friend.name': PropTypes.string,
+  'friend.avatar': PropTypes.string,
+  'friend.isOnline': PropTypes.bool,
+};

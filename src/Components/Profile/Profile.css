@@ -1,6 +1,8 @@
 .profile {
   display: flex;
   flex-flow: column;
+  width: 250px;
+  height: auto;
   margin-left: 30px;
   margin-top: 40px;
 }
@@ -10,21 +12,30 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: auto;
-  border-radius: 5%;
+  border-radius: 5px;
   padding: 15px;
-  background-color: grey;
+  box-shadow: 0 0 10px rgba(253, 252, 252, 0.5);
 }
-.stats{
+.description p,
+.description img {
+  margin-bottom: 10px;
+}
+.stats {
   display: flex;
   list-style: none;
+  width: 250px;
+  /* margin-left: 15px; */
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(253, 252, 252, 0.5);
 }
-.profile-item{
+
+.profile-item {
   display: flex;
-  flex-wrap: wrap;
-  border: 1px solid;
-  width: 70px;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: inherit;
   height: 40px;
 }
 .avatar {

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const StatisticItem = ({ label, percentage }) => {
   return (
     <li className="item">
@@ -15,5 +14,5 @@ export default StatisticItem;
 
 StatisticItem.propTypes = {
   label: PropTypes.string,
-  percentage: PropTypes.number
+  percentage: PropTypes.number,
 };

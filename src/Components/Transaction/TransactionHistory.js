@@ -1,7 +1,7 @@
 import React from 'react';
 import TransactionItem from './TransactionItem';
+import './TransactionHistory.css';
 import PropTypes from 'prop-types';
-
 
 const TransactionHistory = ({ transaction }) => {
   return (
@@ -30,5 +30,5 @@ const TransactionHistory = ({ transaction }) => {
 export default TransactionHistory;
 
 TransactionHistory.propTypes = {
-  transaction: PropTypes.arrayOf(PropTypes.object)
+  transaction: PropTypes.arrayOf(PropTypes.object),
 };
